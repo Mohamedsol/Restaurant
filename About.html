@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+        <link rel="stylesheet" href="styles.css" />
+        <title>Soltane Restaurant</title>
+    </head>
+<body>
+ <!-- -----------------------Navbar start----------------------- -->
+<nav class="navbar navbar-expand-sm navbar-dark sticky-top text-default">
+    <div class="container">
+            <a class="navbar-brand" href="index.html"><h2 style="font-weight:bold; margin-top:7px; color:#05a081"><i class="fa fa-pagelines fa-lg"></i>سلطان</h2> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sol">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="sol">
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item"><a  class="nav-link" href="menu.html"><i class="fa fa-book fa-lg"></i> Menu</a></li>
+                <li class="nav-item"><a  class="nav-link" data-toggle="modal" href="#reserveModal"><i class="fa fa-bell fa-lg"></i> Reservation</a></li>
+                <li class="nav-item"><a  class="nav-link" href="#"><i class="fa fa-info fa-lg"></i> About</a></li>
+                <li class="nav-item"><a  class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                <li class="nav-item"><a  class="nav-link" href="#loca"><i class="fa fa-map-marker fa-lg"></i> Locations</a></li>
+                <li class="nav-item"><a  class="nav-link btn text-dark" href="https://www.ubereats.com/en-US/"target="_blank"><i class="fa fa-dollar fa-lg"></i> Order now</a></li>
+            </ul>
+        </div>
+    </div>    
+</nav>
+     <!---------------- Modal for the button in the Nav --------------->
+    <div id="reserveModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content modal-lg">
+                <div class="modal-header  text-white">
+                    <h3 class="modale-title">Reserve a Table</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div> 
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <!--------------- Form in the modal --------------->
+                        <form>
+                            <div class="form-group row">
+                                    <label for="numCumpers" class="col-form-label col-sm-6">Number of people</label>
+                                <div class="col col-form-label">
+                                    <select name="numCumpers"  class="form-control" id="numCumpers">
+                                        <option selected> 6 people</option>
+                                        <option value="1">7 people</option>
+                                        <option value="2">8 people</option>
+                                        <option value="3">9 people</option>
+                                        <option value="4">10 people</option>
+                                        <option value="5">11 people</option>
+                                        <option value="6">12 people</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <label for="dateid" class="col-form-label col-sm-6 ">Date</label>
+                                <div class="col">
+                                    <input type="date" class="form-control" id="dateid" name="dateid" placeholder="mm/dd/yyyy" />
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Time:</label> 
+                                <div class="col-sm-10">
+                                    <div class="btn-group btn-group-toggle col" data-toggle="buttons">
+                                        <label class="btn  btn-secondary active">
+                                            <input type="radio" name="campsitetype" id="tent" autocomplete="off" value="Tent" checked>6pm
+                                        </label>
+                                        <label class="btn btn-secondary">
+                                            <input type="radio" name="Campsitetype" id="RV" value="RV" autocomplete="off">7pm
+                                        </label>
+                                        <label class="btn btn-secondary">
+                                            <input type="radio" name="Campsitetype" id="RV" value="RV" autocomplete="off">8pm
+                                        </label>
+                                        <label class="btn btn-secondary">
+                                            <input type="radio" name="Campsitetype" id="RV" value="RV" autocomplete="off">9pm
+                                        </label>
+                                        <label class="btn btn-secondary">
+                                            <input type="radio" name="Campsitetype" id="RV" value="RV" autocomplete="off">10pm
+                                        </label>
+                                    </div>
+                                </div>    
+                            </div>
+                            <div class="form-group row">
+                                <button type="submit" text="Cancel" class="btn btn-secondary btn-sm" data-dismiss="modal">Cancel</button>
+                                <button type="submit" text="search" class="btn btn-sm ml-2 color-green" >Find a table</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- The Story-->
+    <div class="container row-content">
+        <div class="row row-content">
+            <div class="col text-center">
+                <h2> Our story</h2>
+                <p class="mt-5"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam harum alias labore. Reprehenderit atque iste excepturi numquam voluptatibus harum esse veritatis porro repellendus consequatur, mollitia optio repudiandae! Explicabo excepturi soluta repellendus unde ducimus, atque illo, quisquam mollitia laboriosam voluptas libero error laborum ut id perferendis beatae placeat magnam? Similique odio quia molestiae, dicta optio repudiandae pariatur tenetur nihil deserunt dolores distinctio ipsum fugiat temporibus natus ab eos culpa maiores praesentium officia debitis consectetur esse nemo delectus voluptas. Ipsum provident neque aperiam fuga ipsam, accusamus soluta ipsa libero alias totam quisquam eos mollitia? Dolor expedita deleniti, quo obcaecati soluta impedit vitae.</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/seif.jpg" alt="Breadcrumb Trail" />
+                    <div class="media-body col align-self-center">
+                        <h3>SeifAllah Soltane</h3>
+                        <p>Owner</p>
+                        <p class="d-none d-sm-block">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magni, perferendis. Commodi incidunt quasi soluta architecto illo magni neque nesciunt natus?</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/mohamed.jpg" alt="Breadcrumb Trail" />
+                    <div class="media-body align-self-center">
+                        <h3>Mohamed Soltani</h3>
+                        <p>President, Owner</p>
+                        <p class="d-none d-sm-block">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nobis repellendus libero dolores dignissimos dolorum mollitia neque totam, ipsa quia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/Ayoub.jpg" alt="Breadcrumb Trail" />
+                    <div class="media-body align-self-center">
+                        <h3>Ayoub Soltani</h3>
+                        <p>Executive Chef, Owner</p>
+                        <p class="d-none d-sm-block">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed, libero. 
+                            Error quam animi fuga. Incidunt excepturi earum obcaecati quos molestiae.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <h1 class="text-green">Catering & Private Event Inquiries</h1>
+            </br>
+            <a role="button" class="btn btn-link" href="soltanne92@gmail.com"><i class="fa fa-envelope-o"></i> delivery@nucamp.co</a>            </div>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <h1 class="text-green">General Business Inquiries & Guest Feedback</h1>
+            </br>
+                <h5>San Francisco</h5>
+                <a role="button" class="btn btn-link" href="soltane.mohamed.achref@gmail.com"><i class="fa fa-envelope-o"></i> sf@soltane.com</a>               
+                <h5>New York</h5>
+                <a role="button" class="btn btn-link" href="soltane.mohamed.achref@gmail.com"><i class="fa fa-envelope-o"></i> ny@soltane.com</a>              
+                <h5>Miami</h5>
+                <a role="button" class="btn btn-link" href="soltane.mohamed.achref@gmail.com"><i class="fa fa-envelope-o"></i> miami@soltane.com</a>
+                <h5>Nashville</h5>
+                <a role="button" class="btn btn-link" href="soltane.mohamed.achref@gmail.com"><i class="fa fa-envelope-o"></i> nashville@soltane.com</a>
+            </div>
+        </div>
+        <div class="row row-content align-items-center">
+            <div class="col">
+                <h1 class="text-green">Media & Public Relation Inquiries </h1>
+            </br>
+            <a role="button" class="btn btn-link" href="soltane.mohamed.achref@gmail.com"><i class="fa fa-envelope-o"></i>media@soltane.com</a>            
+            </div>
+        </div>
+    </div>
+                
+
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">             
+                <div class="col-4 col-sm-2" offset-1>
+                    <h5 style="color:#05a081">Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" style="color:white">Home</a></li>
+                        <li><a href="#" style="color:white">About</a></li>
+                        <li><a href="#menu" style="color:white">Menu</a></li>
+                        <li><a href="#" style="color:white">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                        <h5>Social</h5>
+                        <a class="btn btn-social-icon btn-instagram" href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                        <a class="btn btn-social-icon btn-facebook" href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                        <a role="button" style="color:white" class="btn btn-link" href="tel:+21628699514"><i class="fa fa-phone"></i> 1-206-555-1234</a><br />
+                        <a role="button"style="color:white" class="btn btn-link" href="soltane.mohamed.achref@gmail.com"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+                </div>
+            </div>
+        </div>
+        
+    </footer>
+     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+ </body>
+ </html>
